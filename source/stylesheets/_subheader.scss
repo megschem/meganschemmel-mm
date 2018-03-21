@@ -1,0 +1,15 @@
+.subheader {
+	background-color: pink;
+	grid-column: 1 / 8;
+	grid-row: 2 / 3;
+}
+
+.subheader .item {
+  display: inline-block;   
+  z-index: 10;
+}
+
+.item.divider-2 {
+  display: none;
+}
+
