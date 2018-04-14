@@ -1,9 +1,16 @@
+// Portrait under 540px wide
 .hero-img {
-	background-color: orange;
-	grid-column: 7 / 13;
-	grid-row: 1 / 8;
-}
+	background-color: black;
+	grid-column: 2 / 12;
+	grid-row: 5 / 18;
 
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		background-color: black;
+		grid-column: 7 / 13;
+		grid-row: 1 / 11;
+	}
+}
 // .hero-overlay {
 //   grid-column: 1 / 13;
 // 	grid-row: 7 / 10;

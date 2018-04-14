@@ -1,28 +1,13 @@
-
-html, body {
-  background-color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  margin: 0;
-}
-
-body {
-  display: grid;
-  color: #fff9ce;
-}
-
-.container {
-  background-color: green;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(13, 1fr);
-}
-
+// Portrait
+@import "body";
+@import "container";
 @import "header";
 @import "subheader";
 @import "hero-img";
-// @import "projects-photos";
-// @import "carousel-img";
-// @import "carousel-numbers";
-// @import "social-link";
-// @import "footer";
+@import "projects-photos";
+@import "carousel-img";
+@import "carousel-numbers";
+@import "social-link";
+@import "footer";
+
+// @import "overlay";

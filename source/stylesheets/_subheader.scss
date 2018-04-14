@@ -1,15 +1,47 @@
+// Portrait under 540px wide
 .subheader {
 	background-color: pink;
-	grid-column: 1 / 8;
-	grid-row: 2 / 3;
+	font-size: 1.2rem;
+	grid-column: 2 / 12;
+	grid-row: 3 / 5;
+	align-self: center;
+	padding: 1rem;
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		background-color: pink;
+		font-size: 1.2rem;
+		grid-column: 1 / 8;
+		grid-row: 3 / 4;
+		// align-self: center;
+		// padding: 1rem;
+	}
 }
 
 .subheader .item {
-  display: inline-block;   
-  z-index: 10;
+	display: inline-block; 
+	padding: .5rem;
+	z-index: 10;
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+	  	display: inline-block;  
+	}
 }
 
-.item.divider-2 {
+.item.divider-3 {
   display: none;
+
+  // Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+	  display: inline;
+	}
 }
 
+
+
+
+	
+
+	
+ 

@@ -1,0 +1,15 @@
+// Portrait
+.container {
+  background-color: green;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(30px, 1fr));
+  grid-template-rows: repeat(35, 30px);
+
+  // Media Queries for Landscape over 540px wide
+  @media only screen and (min-width: 540px) {
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(12, minmax(45px, 1fr));
+	grid-template-rows: repeat(12, minmax(22px, 1fr));
+	}
+}

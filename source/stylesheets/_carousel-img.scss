@@ -1,5 +1,13 @@
+// Portrait under 540px wide
 .carousel-img {
 	background-color: blue;
-	grid-column: 1 / 7;
-	grid-row: 4 /5;
+	grid-column: 1 / -1;
+	grid-row: 23 /32;
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		background-color: blue;
+		grid-column: 1 / 6;
+		grid-row: 4 /9;
+	}
 }

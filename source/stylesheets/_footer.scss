@@ -1,7 +1,50 @@
+// Portrait under 540px wide
 footer {
-	background-color: green;
-	display: grid;
+	background-color: orange;
+	font-size: 12px;
+	grid-column: 1 / 13;
+	grid-row: 34 / 36;
+	justify-self: center;
+	// display: grid;
+	// grid-template-columns: repeat(2, 1fr);
+	// grid-template-rows: repeat(2, 1fr);
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		grid-column: 1 / 13;
+		grid-row: 12 / 13;
+		// display: grid;
+		// grid-template-columns: repeat(2, 1fr);
+		// grid-template-rows: repeat(2, 1fr);
+		// padding: .5rem 1rem 0;
+	}
+}
+
+.email {
 	grid-column: 1 / -1;
-	grid-row: 10 / 11;
+	grid-row: 34 / 35;
+	padding: 1.2rem 0 .5rem;
+	text-align: center;
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		align-self: start;
+		grid-row: 1 / 2;
+		justify-self: start;
+	}
+}
+
+.copyright {
+	grid-column: 1 / -1;
+	grid-row: 35 / 36;
+	text-align: center;
+	padding-bottom: 1.5rem;
+
+	// Media Queries for Landscape
+	@media only screen and (min-width: 540px) {
+		align-self: start;
+		grid-row: 1 / 2;
+		justify-self: end;
+	}
 }
 
