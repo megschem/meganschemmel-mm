@@ -3,12 +3,14 @@
 	background-color: black;
 	grid-column: 2 / 12;
 	grid-row: 5 / 18;
+	min-width: 83%;
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
 		background-color: black;
 		grid-column: 7 / 13;
 		grid-row: 1 / 11;
+		min-width: 250px;
 	}
 }
 // .hero-overlay {
@@ -19,3 +21,11 @@
 //   z-index: 10;
 // }
 
+
+
+// img {
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 40%;
+// }

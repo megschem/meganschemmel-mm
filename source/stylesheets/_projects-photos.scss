@@ -5,14 +5,16 @@
 	font-size: 2rem;
 	grid-column: 1 / 11;
 	grid-row: 21 /23;
-	padding-left: 1rem;
+	margin-top: .75rem;
+	padding: .5rem 0 .6rem 1rem;
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
 		align-self: end;
 		font-size: 2rem;
 		grid-column: 1 / 6;
-		grid-row: 4 /5;
-		// padding: 1rem 0 .5rem 1rem;
+		grid-row: 3 /4;
+		margin-top: 2rem;
 	}
 }
+

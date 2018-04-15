@@ -4,7 +4,14 @@
 	background-color: red;
 	grid-column: 2 / 12;
 	grid-row: 33 / 34;
-	justify-self: center;
+	justify-self: stretch;
+
+	.numbers {
+		color: #f0d109;
+		font-size: 175%;
+		padding-left: 1.25rem;
+		text-decoration: none;
+	}	
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
@@ -12,21 +19,6 @@
 		background-color: red;
 		grid-column: 1 / 6;
 		grid-row: 9 / 10;
-		justify-self: center;
-	}
-}
-
-.numbers {
-  color: #f0d109;
-  font-size: 175%;
-  padding-left: 1rem;
-  text-decoration: none;
-
-	// Media Queries for Landscape
-	@media only screen and (min-width: 540px) {
-		color: #f0d109;
-		font-size: 175%;
-		padding-left: 1rem;
-		text-decoration: none;
+		justify-self: center;	
 	}
 }
