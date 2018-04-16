@@ -3,29 +3,26 @@
 	background-color: black;
 	grid-column: 2 / 12;
 	grid-row: 5 / 18;
-	min-width: 83%;
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
 		background-color: black;
 		grid-column: 7 / 13;
-		grid-row: 1 / 11;
-		min-width: 250px;
+		grid-row: 1 / 13;
+		// margin-left: -1rem;
 	}
 }
+
+.hero-img img{
+	height: auto;
+	max-width: 100%;
+	z-index: -1;
+}
+
 // .hero-overlay {
 //   grid-column: 1 / 13;
 // 	grid-row: 7 / 10;
 //   background-color: rgba(255,249,206,0.5);
 // 	width: 100%;
 //   z-index: 10;
-// }
-
-
-
-// img {
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-//     width: 40%;
 // }

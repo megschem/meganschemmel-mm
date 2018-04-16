@@ -32,9 +32,9 @@
 		display: none;
 
 		// Media Queries for Landscape
-		@media only screen and (min-width: 540px) {
-		  	display: inline-block;  
-		}
+		// @media only screen and (min-width: 540px) {
+		//   	display: inline-block;  
+		// }
 	}
 
 	.item.actor {
@@ -81,12 +81,11 @@
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
 		background-color: pink;
-		font-size: 1.1rem;
-		grid-column: 1 / 9;
-		grid-row: 2 / 4;
-		display: inline-block;
-		align-self: center;
-		margin-top: -7px;
+		grid-column: 1 / 8;
+		grid-row: 3 / 4;
+		// display: inline-block;
+		align-self: end;
+		margin-top: -2rem;
 		z-index: 13;
 	}
 }
@@ -97,8 +96,8 @@
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
-	  	display: inline-block;  
-	  	padding: .5rem .25rem .5rem .75rem;
+	  	// display: inline-block;  
+	  	padding: .25rem;
 	}
 }
 

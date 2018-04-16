@@ -1,15 +1,25 @@
 // Portrait
 .container {
-  background-color: green;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(30px, 1fr));
-  grid-template-rows: repeat(2, 40px) repeat(33, 30px);
+    background-color: green;
+    display: grid;
+    grid-template-columns: .5fr repeat(10, minmax(30px, 1fr)) .5fr;
+    grid-template-rows: repeat(2, 40px) repeat(33, 30px);
+    margin: 0 auto;
+    max-width: 18000px;
+    min-width: 320px;
 
-  // Media Queries for Landscape over 540px wide
-  @media only screen and (min-width: 540px) {
-	background-color: white;
-	display: grid;
-	grid-template-columns: repeat(5, minmax(45px, 1fr)) minmax(.25fr, 1fr) repeat(6, minmax(45px, 1fr));
-	grid-template-rows: repeat(12, minmax(22px, 1fr));
-	}
+    // Media Queries for Landscape over 540px wide
+    @media only screen and (min-width: 540px) {
+      	background-color: white;
+      	display: grid;
+      	grid-template-columns: repeat(5, minmax(25px, 1fr)) repeat(7, minmax(35px, 1fr));
+      	grid-template-rows: 75px repeat(2, 20px) 35px repeat(4, 30px) repeat(4, 40px);;
+  	}
 }
+
+
+// minmax(30px, .5fr) repeat(2, minmax(20px, .3fr)) minmax(22px, .75fr) repeat(3, .25fr) repeat(8, .5fr);
+
+// .6fr .3fr .1fr .2fr  (minmax(100px, 1.3fr)) repeat(4, .3fr) repeat(3, .2fr);
+
+// minmax(75px, 1fr) .4fr minmax(25px, .4fr) minmax(80px, 1.75fr) repeat(2, minmax(25px,.4fr)) repeat(6, 35px) 1fr;
