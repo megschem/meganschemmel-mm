@@ -1,11 +1,11 @@
 // Portrait under 540px wide
 .subheader {
 	align-self: center;
-	background-color: pink;
+	// background-color: pink;
 	font-size: 1rem;
 	grid-column: 2 / 12;
 	grid-row: 3 / 5;
-	margin-top: -.5rem;
+	margin-top: -2rem;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -31,10 +31,10 @@
 	.item.divider-2 {
 		display: none;
 
-		// Media Queries for Landscape
-		// @media only screen and (min-width: 540px) {
-		//   	display: inline-block;  
-		// }
+		// Media Queries for Landscape over 640px wide
+    	@media only screen and (min-width: 643px) {
+		  	display: inline-block;  
+		}
 	}
 
 	.item.actor {
@@ -80,13 +80,26 @@
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
-		background-color: pink;
+		// background-color: pink;
 		grid-column: 1 / 8;
-		grid-row: 3 / 4;
-		// display: inline-block;
+		grid-row: 2 / 4;
 		align-self: end;
-		margin-top: -2rem;
+		margin-top: .25rem;
 		z-index: 13;
+	}
+
+	@media only screen and (min-width: 643px) {
+		display: inline-block;
+		grid-column: 1 / 8;
+		grid-row: 2 / 3;
+		padding: 0 .5rem;
+		justify-self: center;
+		text-align: justify;
+		// width: 100%;
+	}
+
+	@media only screen and (min-width: 800px) {
+		align-self: center;
 	}
 }
 
@@ -95,9 +108,16 @@
 	padding: .5rem;
 
 	// Media Queries for Landscape
-	@media only screen and (min-width: 540px) {
-	  	// display: inline-block;  
+	@media only screen and (min-width: 540px) {  
 	  	padding: .25rem;
+	}
+
+	@media only screen and (min-width: 730px) {
+		padding: .5rem;
+	}
+
+	@media only screen and (min-width: 800px) {
+		padding: 0 .7rem;
 	}
 }
 

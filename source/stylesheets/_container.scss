@@ -1,20 +1,33 @@
 // Portrait
 .container {
-    background-color: green;
     display: grid;
     grid-template-columns: .5fr repeat(10, minmax(30px, 1fr)) .5fr;
     grid-template-rows: repeat(2, 40px) repeat(33, 30px);
     margin: 0 auto;
-    max-width: 18000px;
+    max-width: 1024px;
     min-width: 320px;
 
     // Media Queries for Landscape over 540px wide
     @media only screen and (min-width: 540px) {
-      	background-color: white;
+      	background-color: black;
       	display: grid;
       	grid-template-columns: repeat(5, minmax(25px, 1fr)) repeat(7, minmax(35px, 1fr));
-      	grid-template-rows: 75px repeat(2, 20px) 35px repeat(4, 30px) repeat(4, 40px);;
-  	}
+      	grid-template-rows: 75px repeat(2, 20px) 35px repeat(4, 35px) 40px 50px repeat(2, 40px);;
+    }
+
+    // Media Queries for Landscape over 640px wide
+    @media only screen and (min-width: 643px) {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(25px, 1fr)) repeat(7, minmax(35px, 1fr));
+        grid-template-rows: 75px 30px 20px 30px repeat(4, 42px) 50px 50px repeat(2, 40px);;
+    }
+
+    @media only screen and (min-width: 730px) {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(25px, 1fr)) repeat(7, minmax(35px, 1fr));
+        grid-template-rows: 85px 30px 20px 30px repeat(3, 50px) 60px 55px 50px 50px 50px 1fr 10px;
+    }
+
 }
 
 

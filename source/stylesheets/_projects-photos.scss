@@ -1,12 +1,12 @@
 // Portrait under 540px wide
 .projects-photos {
 	align-self: center;
-	background-color: grey;
-	font-size: 2rem;
-	grid-column: 1 / 11;
+	background-color: black;
+	font-size: 1.6rem;
+	grid-column: 1 / 13;
 	grid-row: 21 /23;
 	margin-top: .75rem;
-	padding: .5rem 0 .6rem 1rem;
+	padding: 2.1rem 9rem 1.5rem 1rem;
 
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
@@ -16,5 +16,9 @@
 		grid-row: 4 /5;
 		//  margin-top: 2rem;
 	}
+
+	@media only screen and (min-width: 643px) {
+			padding: .3rem .5rem;
+		}
 }
 

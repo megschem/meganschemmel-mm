@@ -1,25 +1,55 @@
 // Portrait under 540px wide
 .carousel-numbers {
 	align-self: center;
-	background-color: red;
+	// background-color: red;
 	grid-column: 2 / 12;
 	grid-row: 33 / 34;
 	justify-self: center;
 
-	.numbers {
-		color: #f0d109;
-		font-size: 175%;
-		padding-left: 1.25rem;
-		text-decoration: none;
-	}	
-
 	// Media Queries for Landscape
 	@media only screen and (min-width: 540px) {
-		align-self: center;
-		background-color: red;
-		font-size: 60%;
-		grid-column: 1 / 7;
+		grid-column: 1 / 6;
 		grid-row: 10/ 11;
-		justify-self: start;	
+		// justify-self: start;
 	}
+
+	@media only screen and (min-width: 643px) {
+		grid-column: 1 / 6;
+		grid-row: 10 / 11;
+		// font-size: 70%;
+		// padding: .5rem;
+	}
+
+	@media only screen and (min-width: 730px) {
+		// font-size: 75%;
+		// justify-self: stretch;
+		// padding: 1rem;
+	}
+
+	.numbers {
+		color: #f0d109;
+		font-size: 1.9rem;
+		padding-left: .75rem;
+		text-decoration: none;
+
+		@media only screen and (min-width: 540px) {
+			// align-self: center;
+			font-size: 1.1rem;
+			padding-left: 1.1rem;
+			text-align: justify;
+		}
+
+		@media only screen and (min-width: 643px) {
+			grid-column: 1 / 6;
+			grid-row: 10 / 11;
+			font-size: 1.25rem;
+			// justify-self: stretch;
+			padding: .7rem;
+		}
+
+		@media only screen and (min-width: 730px) {
+			font-size: 1.3rem;
+			padding: .85rem;
+		}
+	}	
 }

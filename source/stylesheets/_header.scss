@@ -1,6 +1,6 @@
 // Portrait under 540px wide
 header {
-	background-color: purple;
+	// background-color: purple;
 	color: #f0d109;
 	font-family: "Petit Formal Script", cursive, Arial;
 	font-size: 3.8rem;
@@ -24,4 +24,16 @@ header {
 		grid-column: 1 / 8;
 		grid-row: 1 / 2;
   	}
+
+  	// Media Queries for Landscape over 640px wide
+    @media only screen and (min-width: 643px) {
+    	font-size: 4.4rem;
+    }
+
+    // Media Queries for Landscape over 730px wide
+    @media only screen and (min-width: 730px) {
+    	font-size: 4.7rem;
+    	// align-self: start;
+    	padding: .20rem;
+    }
  }
